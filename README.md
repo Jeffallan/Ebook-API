@@ -5,7 +5,7 @@ Made with Python 3, Django Rest Framework, Scrapy and Docker
 
 ### Installing
 
-Make sure ho have [Docker](https://docs.docker.com/v17.12/install/) and [Docker Compose](https://docs.docker.com/compose/install/) installed on your computer.
+Make sure to have [Docker](https://docs.docker.com/v17.12/install/) and [Docker Compose](https://docs.docker.com/compose/install/) installed on your computer.
 
 Navigate to the root directory of this project.
 
