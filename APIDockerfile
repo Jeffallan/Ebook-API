@@ -1,0 +1,12 @@
+FROM python:3
+
+LABEL Name=allit Version=0.0.1
+
+RUN mkdir /app
+
+WORKDIR /app
+COPY requirements.txt /app/
+
+# Using pip:
+RUN pip install -r requirements.txt
+COPY . /app/

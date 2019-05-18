@@ -1,0 +1,27 @@
+# Add environment variables and cpoy this to .env
+
+PG_NAME=           
+PG_USER=           
+PG_HOST=           
+PG_PORT=           
+DJANGO_KEY=
+API_PORT=
+API_HOST=
+BIND_TO_HOST=
+API_DEBUG=             
+
+# default pg_name: postgres
+# default pg_user: postgres
+# default pg_host: api_db   This must be the same name as your db service in your docker compose file
+# default pg_port: 5432
+# default api_port: 8000
+# defaut api_host: allitapi  This must be the same as your api service in docker compose DO NOT USE UNDERSCORES
+# default bind_to_host 0.0.0.0
+# api_debug True or False
+ 
+
+# generate a new secret key like so:
+# activate your virtual environment
+# python manage.py shell
+# from django.core.management.utils import get_random_secret_key
+# get_random_secret_key()

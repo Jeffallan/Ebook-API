@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  api_db:
+    image: postgres
+    env_file: .env
+    ports:
+      - $PG_PORT:$PG_PORT
+  allitapi:
+    image: allit
+    build:
+      context: .
+      dockerfile: APIDockerfile
+    command: bash -c "chmod 744 wait-for-it.sh &&
+                      ./wait-for-it.sh $PG_HOST:$PG_PORT -- echo 'Postgres Ready!' &&
+                      python manage.py runserver $BIND_TO_HOST:$API_PORT"
+    ports:
+      - $API_PORT:$API_PORT
+    volumes:
+      - .:/app
+    depends_on:
+      - api_db
+    env_file: .env
