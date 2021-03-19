@@ -11,7 +11,7 @@ cryptography==2.6.1
 cssselect==1.0.3
 Django==2.2.1
 django-filter==2.1.0
-djangorestframework==3.9.3
+djangorestframework==3.11.2
 hyperlink==19.0.0
 idna==2.8
 incremental==17.5.0
