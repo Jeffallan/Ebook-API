@@ -31,7 +31,7 @@ pytz==2019.1
 PyYAML==5.1
 queuelib==1.5.0
 requests==2.21.0
-Scrapy==1.6.0
+Scrapy==1.8.2
 service-identity==18.1.0
 six==1.12.0
 sqlparse==0.3.0
